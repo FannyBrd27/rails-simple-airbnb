@@ -1,0 +1,13 @@
+<div class= "new-flat">
+  <h1>New flat</h1>
+  <%= link_to "Back to list", flats_path, class: "link-back-to-list" %>
+</div>
+<%= simple_form_for @flat do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :description %>
+  <%= f.input :price_per_night %>
+  <%= f.input :number_of_guests %>
+  <%= f.submit "Add this flat", class: "btn-form" %>
+<% end %>
+

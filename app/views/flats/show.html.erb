@@ -1,14 +1,12 @@
 <div class="apartment-head">
-  <h1>@flat.name</h1>
-  <%= link_to "Back to List", flats_path %>
+  <h1><%= @flat.name  %></h1>
+  <%= link_to "Back to List", flats_path, class: "link-back-to-list" %>
 </div>
 <hr>
 
 <div class="apartment-details">
-  <p>@flat.address</p>
-  <p>@flat.description</p>
-  <p>@flat.price_per_night</p>
-  <p>@flat.number_of_guests</p>
-
-
+  <p><%= @flat.address %></p>
+  <p><%= @flat.description %></p>
+  <p><%= @flat.price_per_night %></p>
+  <p><%= @flat.number_of_guests %></p>
 </div>

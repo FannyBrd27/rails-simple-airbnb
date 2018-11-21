@@ -1,0 +1,32 @@
+.elements-container {
+  background-color: #EFF1F3;
+  padding: 100px;
+}
+
+h1 {
+  color: grey;
+  text-align: center;
+}
+
+.card {
+  height: 220px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-color: lightgrey;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+}
+
+.card-name{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+}
+
+.number-info {
+  width: 80px;
+  display :flex;
+  justify-content: space-between;
+  align-items: center;
+}

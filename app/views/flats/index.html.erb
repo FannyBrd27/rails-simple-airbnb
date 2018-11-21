@@ -1,14 +1,27 @@
 <div class="navbar">
-  <p>Simple Airbnb</p>
-  <%= link_to "Add flat", class: "button" %>
+  <p class="app-name">Simple Airbnb</p>
+  <%= link_to "Add flat", new_flat_path, class: "btn-add" %>
 </div>
 
-<h1>All flats currently available</h1>
-<% @flats.each do |flat| %>
-  <div class="card">
-    <p><%= flat.name %></p>
-    <p><%= flat.address %></p>
-    <p><%= flat.price_per_night %>€</p>
-    <p><%= flat.number_of_guests %>p</p>
+<div class="elements-container">
+  <h1>All flats</h1>
+  <div class="card-container">
+    <div class="row">
+      <% @flats[0...3].each do |flat| %>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-name"><h4><%= flat.name %></h4></div>
+              <div class="card-address"><%= flat.address %></div>
+              <div class="number-info">
+                <div class="card-price_per_night"><%= flat.price_per_night %></div>
+                <div class="number_of_guests"><%= flat.number_of_guests %></div>
+              </div>
+              <div class="more-info"> <%= link_to "more info", flat_path(flat) %></div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
-<% end %>
+</div>

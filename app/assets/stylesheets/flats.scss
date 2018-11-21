@@ -1,3 +1,37 @@
 // Place all the styles related to the Flats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  padding: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+  width: auto;
+  background-color: #E2B6CF;
+}
+
+.app-name {
+  color: white;
+}
+
+.btn-add {
+  width: 100px;
+  padding: 8px 15px;
+  background-color: white;
+  color: #E2B6CF;
+  border: 1px solid #E2B6CF;
+  border-radius: 7px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #E2B6CF;
+  color: white;
+  border: 1px solid white;
+}
+
